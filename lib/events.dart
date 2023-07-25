@@ -10,6 +10,7 @@ class Events extends StatelessWidget {
       body: (scrollController){
         return Expanded(
           child: ListView.builder(
+            key: const PageStorageKey('ListViewEvents'),
             padding: const EdgeInsets.only(top: 0.1, bottom: 15.0),
             controller: scrollController,
             scrollDirection: Axis.vertical,

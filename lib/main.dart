@@ -48,18 +48,11 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurpleAccent),
         ),
 
-        // filledButtonTheme: const FilledButtonThemeData(
-        //   style: ButtonStyle(
-        //     backgroundColor: MaterialStatePropertyAll(Colors.deepPurpleAccent),
-        //     alignment: Alignment.center
-        //   )
-        // ),
-
-        filledButtonTheme: FilledButtonThemeData(
-          style: themeData.filledButtonTheme.style?.copyWith(
-            backgroundColor: const MaterialStatePropertyAll(Colors.deepPurpleAccent),
+        filledButtonTheme: const FilledButtonThemeData(
+          style: ButtonStyle(
+            backgroundColor: MaterialStatePropertyAll(Colors.deepPurpleAccent),
             alignment: Alignment.center
-          ),
+          )
         ),
 
         iconTheme: themeData.iconTheme.copyWith(

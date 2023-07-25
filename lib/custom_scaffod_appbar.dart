@@ -19,11 +19,11 @@ class CustomScaffodAppBar extends StatefulWidget {
   State<CustomScaffodAppBar> createState() => _CustomScaffodAppBarState();
 }
 
-double _currentScrollIndex = 0.0;
+// double _currentScrollIndex = 0.0;
 
 class _CustomScaffodAppBarState extends State<CustomScaffodAppBar> {
 
-  final ScrollController scrollController = ScrollController(initialScrollOffset: _currentScrollIndex);
+  final ScrollController scrollController = ScrollController(initialScrollOffset: 0.0);
 
   late final ValueState<double> animationHeight;
 
@@ -60,7 +60,7 @@ class _CustomScaffodAppBarState extends State<CustomScaffodAppBar> {
 
     scrollController.addListener(() {
 
-      _currentScrollIndex = scrollController.offset;
+      // _currentScrollIndex = scrollController.offset;
       //// print('ScrollPosition is: $_currentScrollIndex');//type is double
   
       if (scrollController.position.userScrollDirection == ScrollDirection.forward) {//down
